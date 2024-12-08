@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from "next/image";
 import { FiTrash2 } from 'react-icons/fi';
 import { GoTag } from 'react-icons/go';
 import { FaArrowRight } from "react-icons/fa";

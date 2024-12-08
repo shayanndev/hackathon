@@ -1,4 +1,3 @@
-import Navbar from '../components/Navbar';
 import HeroSection from '../components/Hero';
 import NewArrivals from '../components/Arrival';
 import TopSelling from '../components/TopSelling';

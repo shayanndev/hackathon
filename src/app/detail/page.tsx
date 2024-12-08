@@ -1,7 +1,6 @@
 import React from 'react'
 import Image from "next/image";
-import { FaChevronUp, FaChevronRight, FaChevronDown, FaStar, FaArrowRight, FaArrowLeft } from "react-icons/fa";
-import { FiMinus, FiPlus } from 'react-icons/fi';
+import { FaChevronRight, FaStar, FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import { AiFillStar } from 'react-icons/ai';
 import { HiBadgeCheck, HiDotsHorizontal } from 'react-icons/hi';
 

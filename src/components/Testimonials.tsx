@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { FaStar, FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { HiBadgeCheck } from "react-icons/hi";
 
