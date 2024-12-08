@@ -32,7 +32,7 @@ function HeroSection() {
             </div>
 
             {/* Companies Logo Section */}
-            <div className="absolute bottom-0 w-full bg-black py-12">
+            <div id="brands" className="absolute bottom-0 w-full bg-black py-12">
                 <div className="grid grid-cols-3 md:grid-cols-5 place-items-center px-4 md:p-0">
                     <Image
                         src="/images/comp1.png"

@@ -35,9 +35,11 @@ function Navbar() {
 
                 {/* Navigation Links */}
                 <div className="hidden md:flex items-center space-x-4 lg:space-x-8 text-gray-800 font-normal">
-                    <div className="flex items-center cursor-pointer">
-                        Shop <IoIosArrowDown className="ml-1" />
-                    </div>
+                    <Link href="/category">
+                        <div className="flex items-center cursor-pointer">
+                            Shop <IoIosArrowDown className="ml-1" />
+                        </div>
+                    </Link>
                     <a href="#onsales" className="hover:text-black">
                         On Sales
                     </a>
