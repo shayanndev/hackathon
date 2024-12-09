@@ -1,5 +1,6 @@
 
 import Image from "next/image";
+import Link from "next/link";
 import React from 'react'
 
 function Category() {
@@ -14,39 +15,47 @@ function Category() {
                 {/* Grid Layout */}
                 <div className="grid grid-columns-1 md:grid-cols-3 gap-4">
                     {/* Row 1 - First Image */}
-                    <div className="relative h-72">
-                        <Image
-                            src="/images/category1.png"
-                            alt="Category 1"
-                            fill
-                            className="object-cover rounded-lg w-full"
-                        />
-                    </div>
+                    <Link href="/category">
+                        <div className="relative h-72">
+                            <Image
+                                src="/images/category1.png"
+                                alt="Category 1"
+                                fill
+                                className="object-top-left rounded-lg w-full"
+                            />
+                        </div>
+                    </Link>
+
                     <div className="relative h-72 md:col-span-2">
                         <Image
                             src="/images/category2.png"
                             alt="Category 2"
                             fill
-                            className="object-cover rounded-lg"
+                            className="object-top-left rounded-lg"
                         />
                     </div>
+
                     <div className="relative h-72 md:col-span-2">
                         <Image
                             src="/images/category3.png"
                             alt="Category 3"
                             fill
-                            className="object-cover rounded-lg"
+                            className="object-top-left rounded-lg"
                         />
                     </div>
+
                     <div className="relative h-72">
                         <Image
                             src="/images/category4.png"
                             alt="Category 4"
                             fill
-                            className="object-cover rounded-lg"
+                            className="object-top-left rounded-lg"
                         />
+
                     </div>
                 </div>
+
+
             </div>
         </div>
 

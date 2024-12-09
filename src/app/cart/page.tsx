@@ -8,7 +8,7 @@ function CartPage() {
         <div>
             <div className="px-6 md:px-28 mb-12 md:mb-20">
                 {/* Text Column */}
-                <h1 className="text-2xl md:text-3xl font-extrabold leading-tight text-black mb-6">Your Cart</h1>
+                <h1 className="text-2xl md:text-2xl font-extrabold leading-tight text-black mb-6">Your Cart</h1>
 
                 <div className="flex flex-wrap lg:flex-nowrap gap-8">
                     {/* Cart Items Section */}
@@ -53,7 +53,7 @@ function CartPage() {
 
                         <div className="flex items-center border border-gray-300 p-4 rounded-lg space-x-4">
                             {/* Item Image */}
-                            <div className="w-28 h-28 flex-shrink-0">
+                            <div className="w-20 md:w-28 aspect-square flex-shrink-0">
                                 <img
                                     src="/images/cart2.png"
                                     alt="Product"
@@ -90,7 +90,7 @@ function CartPage() {
 
                         <div className="flex items-center border border-gray-300 p-4 rounded-lg space-x-4">
                             {/* Item Image */}
-                            <div className="w-28 h-28 flex-shrink-0">
+                            <div className="w-20 md:w-28 aspect-square flex-shrink-0">
                                 <img
                                     src="/images/cart3.png"
                                     alt="Product"
@@ -150,7 +150,7 @@ function CartPage() {
                                 <span className="font-bold">$162.00</span>
                             </div>
                         </div>
-                        <div className="flex items-center justify-between w-full gap-2 md:w-auto my-8">
+                        <div className="flex md:flex-row flex-col items-center justify-between w-full gap-2 md:w-auto my-8">
                             <div className="md:flex-grow bg-gray-300 flex items-center w-full rounded-full px-4 py-2">
                                 <GoTag className="text-gray-500" size={20} />
                                 <input
@@ -159,7 +159,7 @@ function CartPage() {
                                     className="flex-1 bg-transparent outline-none px-2 text-gray-700"
                                 />
                             </div>
-                            <button className="bg-black text-white px-8 py-2 rounded-full hover:bg-gray-800 transition">
+                            <button className="w-full md:w-auto bg-black text-white px-8 py-2 rounded-full hover:bg-gray-800 transition">
                                 Apply
                             </button>
 

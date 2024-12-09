@@ -1,12 +1,20 @@
-import React from 'react';
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import { FaChevronUp, FaChevronRight, FaChevronDown } from "react-icons/fa";
 import { HiAdjustmentsVertical } from "react-icons/hi2";
-import { AiFillStar } from 'react-icons/ai';
+import { AiFillStar, AiOutlineClose } from 'react-icons/ai';
 
 
 
 function CategoryPage() {
+
+  const [isFilterOpen, setIsFilterOpen] = useState(false);
+
+  const toggleFilter = () => {
+    setIsFilterOpen(!isFilterOpen);
+  };
+
   return (
     <div>
       <div className="px-6 md:px-28 mb-12 md:mb-20">
@@ -15,10 +23,27 @@ function CategoryPage() {
         </p>
         <div className="flex flex-wrap lg:flex-nowrap gap-8">
           {/* Filter Sidebar */}
-          <div className="w-full md:w-1/4 p-6 rounded-lg space-y-6 border border-gray-300">
+          {/* w-full lg:w-1/4 p-6 rounded-lg space-y-6 border border-gray-300 */}
+          <div
+            className={`fixed bottom-0 left-0 w-full h-[90%] bg-white border-t border-gray-300 z-50 p-6 rounded-t-lg space-y-6 lg:static lg:w-1/4 lg:h-auto lg:translate-y-0 lg:border lg:p-6 transition-transform transform ${isFilterOpen
+              ? "translate-y-0"
+              : "translate-y-full lg:translate-y-0"
+              }`}
+          >
             <h3 className="flex flex-row items-center justify-between text-xl font-semibold mb-2">
               <p>Filters</p>
-              <p><HiAdjustmentsVertical size={18} /></p>
+              <p
+                className="hidden lg:block cursor-pointer"
+                onClick={toggleFilter}
+              >
+                <HiAdjustmentsVertical size={18} />
+              </p>
+              <p
+                className="lg:hidden block cursor-pointer"
+                onClick={toggleFilter}
+              >
+                <AiOutlineClose size={18} />
+              </p>
             </h3>
 
             <div className="mb-8">
@@ -136,18 +161,26 @@ function CategoryPage() {
 
           {/* Products Section */}
           <div className="w-full lg:w-3/4">
-
             <div className="w-full flex flex-row items-center md:justify-between text-base text-gray-500 mb-4 gap-2">
-
-              <p className="text-xl md:text-2xl text-black font-bold">Casuals </p>
-              <div className="flex flex-row items-center">
-                <p className="flex-grow text-xs md:text-sm">Showing 1-10 of 100 Products</p>
-                <p className="hidden md:flex items-center gap-2">Sort By: <b className="flex text-black gap-2 items-center">Most Popular <FaChevronDown size={14} /></b></p>
-                <p className="block md:hidden"><HiAdjustmentsVertical size={14} /></p>
+              <p className="text-xl md:text-2xl text-black font-bold">Casuals</p>
+              <div className="flex flex-row items-center gap-2">
+                <p className="flex-grow text-xs md:text-sm">
+                  Showing 1-10 of 100 Products
+                </p>
+                <p className="hidden md:flex items-center gap-2">
+                  Sort By:{" "}
+                  <b className="flex text-black gap-2 items-center">
+                    Most Popular <FaChevronDown size={14} />
+                  </b>
+                </p>
+                <p
+                  className="block lg:hidden text-black cursor-pointer"
+                  onClick={toggleFilter}
+                >
+                  <HiAdjustmentsVertical size={18} color="text-black" />
+                </p>
               </div>
-
             </div>
-
             <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
               <div className="bg-white rounded-lg overflow-hidden">

@@ -31,99 +31,99 @@ function Footer() {
 
 
             <div className="mx-auto">
-                <div className="flex flex-col md:flex-row items-center justify-between gap-8 mb-10">
+                <div className="flex md:flex-row flex-wrap items-start justify-between gap-8 mb-10">
 
-                    <div className="w-full md:w-1/4 flex flex-col items-start md:justify-between text-left">
+                    <div className="w-full md:w-1/4 flex flex-col space-y-6 items-start justify-between text-left">
                         <span className="text-2xl font-extrabold">SHOP.CO</span>
-                        <p className="text-gray-400">We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
-                        <div className="flex space-x-4 text-center">
-                            <a href="#" className="text-gray-900 hover:text-black">
+                        <p className="flex-grow text-gray-500">We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
+                        <div className="flex space-x-4 text-left md:text-center">
+                            <a href="#" className="text-gray-900 hover:bg-gray-900 p-2 rounded-full hover:text-white">
                                 <FaTwitter size={20} />
                             </a>
-                            <a href="#" className="text-gray-900 hover:text-black">
+                            <a href="#" className="text-gray-900 hover:bg-gray-900 p-2 rounded-full hover:text-white">
                                 <FaFacebookF size={20} />
                             </a>
-                            <a href="#" className="text-gray-900 hover:text-black">
+                            <a href="#" className="text-gray-900 hover:bg-gray-900 p-2 rounded-full hover:text-white">
                                 <FaInstagram size={20} />
                             </a>
-                            <a href="#" className="text-gray-900 hover:text-black">
+                            <a href="#" className="text-gray-900 hover:bg-gray-900 p-2 rounded-full hover:text-white">
                                 <FaGithub size={20} />
                             </a>
                         </div>
                     </div>
 
 
-                    <div className="text-center md:text-left">
+                    <div className="text-left">
                         <h4 className="text-xl font-semibold text-gray-900 mb-4">Company</h4>
                         <ul className="space-y-2">
                             <li>
-                                <a href="#" className="text-gray-400 hover:text-black">About</a>
+                                <a href="#" className="text-gray-500 hover:text-black">About</a>
                             </li>
                             <li>
-                                <a href="#" className="text-gray-400 hover:text-black">Features</a>
+                                <a href="#" className="text-gray-500 hover:text-black">Features</a>
                             </li>
                             <li>
-                                <a href="#" className="text-gray-400 hover:text-black">Works</a>
+                                <a href="#" className="text-gray-500 hover:text-black">Works</a>
                             </li>
                             <li>
-                                <a href="#" className="text-gray-400 hover:text-black">Career</a>
+                                <a href="#" className="text-gray-500 hover:text-black">Career</a>
                             </li>
                         </ul>
                     </div>
 
 
-                    <div className="text-center md:text-left">
+                    <div className="text-left">
                         <h4 className="text-xl font-semibold text-gray-900 mb-4">Help</h4>
                         <ul className="space-y-2">
                             <li>
-                                <a href="#" className="text-gray-400 hover:text-black">Customer Support</a>
+                                <a href="#" className="text-gray-500 hover:text-black">Customer Support</a>
                             </li>
                             <li>
-                                <a href="#" className="text-gray-400 hover:text-black">Delivery Details</a>
+                                <a href="#" className="text-gray-500 hover:text-black">Delivery Details</a>
                             </li>
                             <li>
-                                <a href="#" className="text-gray-400 hover:text-black">Terms and Services</a>
+                                <a href="#" className="text-gray-500 hover:text-black">Terms and Services</a>
                             </li>
                             <li>
-                                <a href="#" className="text-gray-400 hover:text-black">Privacy Policy</a>
+                                <a href="#" className="text-gray-500 hover:text-black">Privacy Policy</a>
                             </li>
                         </ul>
                     </div>
 
 
-                    <div className="text-center md:text-left">
+                    <div className="text-left">
                         <h4 className="text-xl font-semibold text-gray-800 mb-4">FAQ</h4>
                         <ul className="space-y-2">
                             <li>
-                                <a href="#" className="text-gray-400 hover:text-black">Account</a>
+                                <a href="#" className="text-gray-500 hover:text-black">Account</a>
                             </li>
                             <li>
-                                <a href="#" className="text-gray-400 hover:text-black">Manage Deliveries</a>
+                                <a href="#" className="text-gray-500 hover:text-black">Manage Deliveries</a>
                             </li>
                             <li>
-                                <a href="#" className="text-gray-400 hover:text-black">Orders</a>
+                                <a href="#" className="text-gray-500 hover:text-black">Orders</a>
                             </li>
                             <li>
-                                <a href="#" className="text-gray-400 hover:text-black">Payments</a>
+                                <a href="#" className="text-gray-500 hover:text-black">Payments</a>
                             </li>
                         </ul>
                     </div>
 
 
-                    <div className="text-center md:text-left">
+                    <div className="text-left">
                         <h4 className="text-xl font-semibold text-gray-900 mb-4">Resources</h4>
                         <ul className="space-y-2">
                             <li>
-                                <a href="#" className="text-gray-400 hover:text-black">Free eBooks</a>
+                                <a href="#" className="text-gray-500 hover:text-black">Free eBooks</a>
                             </li>
                             <li>
-                                <a href="#" className="text-gray-400 hover:text-black">Developer Tutorials</a>
+                                <a href="#" className="text-gray-500 hover:text-black">Developer Tutorials</a>
                             </li>
                             <li>
-                                <a href="#" className="text-gray-400 hover:text-black">How To Blogs</a>
+                                <a href="#" className="text-gray-500 hover:text-black">How To Blogs</a>
                             </li>
                             <li>
-                                <a href="#" className="text-gray-400 hover:text-black">Youtube Playlist</a>
+                                <a href="#" className="text-gray-500 hover:text-black">Youtube Playlist</a>
                             </li>
                         </ul>
                     </div>

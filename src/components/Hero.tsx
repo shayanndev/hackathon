@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 function HeroSection() {
     return (
@@ -14,19 +15,37 @@ function HeroSection() {
                     <p className="text-gray-600 text-lg md:text-xl">
                         Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.
                     </p>
-                    <button className="w-full md:w-1/3 bg-black text-white px-8 py-3 rounded-full hover:bg-gray-800 transition">
-                        Shop Now
-                    </button>
+
+                    <Link href="/category">
+                        <button className="w-full md:w-1/3 bg-black text-white px-8 py-3 rounded-full hover:bg-gray-800 transition">
+                            Shop Now
+                        </button>
+                    </Link>
                 </div>
 
                 {/* Image Column */}
-                <div className="md:w-1/2 h-full flex justify-center items-start mt-12 md:mt-0">
+                <div className="relative md:w-1/2 h-full flex justify-center items-start mt-12 md:mt-0">
+
                     <Image
                         src="/images/hero.jpeg"
                         alt="Fashion model"
                         className="object-cover rounded-lg"
                         width={600}
                         height={600}
+                    />
+                    <Image
+                        src="/images/star-1.png"
+                        alt="Fashion model"
+                        className="object-cover rounded-lg absolute top-6 right-3 md:top-24 md:right-10"
+                        width={100}
+                        height={100}
+                    />
+                    <Image
+                        src="/images/star-2.png"
+                        alt="Fashion model"
+                        className="object-cover rounded-lg absolute top-32 left-4 md:left-10 md:top-80"
+                        width={60}
+                        height={60}
                     />
                 </div>
             </div>

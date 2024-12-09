@@ -137,9 +137,11 @@ function NewArrivals() {
                 </div>
             </Link>
             <div className="flex justify-center items-center mt-20">
-                <button className="w:1/3 border border-gray-300 text-black px-20 py-3 rounded-full hover:bg-black hover:text-white transition">
-                    View All
-                </button>
+                <Link href="/category">
+                    <button className="w:1/3 border border-gray-300 text-black px-20 py-3 rounded-full hover:bg-black hover:text-white transition">
+                        View All
+                    </button>
+                </Link>
             </div>
 
 
